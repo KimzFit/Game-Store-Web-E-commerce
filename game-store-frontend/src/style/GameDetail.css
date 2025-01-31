@@ -1,0 +1,106 @@
+.arrow-to-home{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all .3s ease;
+}
+
+.arrow-to-home:hover{
+    color: #661ae6;
+}
+
+.heading-gamedetail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.gamedetail-container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.gamedetails-block{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.gamedetails-block img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.game-block-1{
+    background-color: #222222;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.block-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-block-2{
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.reviews-section {
+    margin-top: 20px;
+    color: white;
+  }
+  
+  .reviews-section h2,
+  .reviews-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .reviews-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .reviews-section li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  input[type="number"] {
+    width: 60px;
+    margin-top: 10px;
+  }
+  
+  .review-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .reaview-user li{
+    background-color: #222222;
+    padding: 10px;
+  }

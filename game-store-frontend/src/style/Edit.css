@@ -1,0 +1,88 @@
+
+
+.Navigation-bar{
+    background-color: #18181b;
+    margin: 0 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.Edit-container{
+    background-color: #f9f9f9;
+    height: 92vh;
+    display: flex;
+}
+
+.Edit{
+    background-color: #ffffff;
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.form-container{
+    width: 60%;
+    margin: 2% auto;
+    height: 50%;
+}
+
+.input-box{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-row: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    font-size: 1rem;
+    column-gap: 3rem;
+}
+
+.input-box input{
+    padding: 10px;
+    
+}
+
+
+
+.btn-con{
+    width: 100%;
+    
+}
+
+.btn-con button{
+    width: 100%;
+    padding: 10px 0px;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+.User-data-heading{
+    width: 60%;
+    margin:  5% auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.User-data-heading div p{
+    background-color: #efefef;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .Edit{
+        width: 100%;
+    }
+    .input-box{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .User-data-heading div{
+        width: 100%;
+    }
+
+    
+}

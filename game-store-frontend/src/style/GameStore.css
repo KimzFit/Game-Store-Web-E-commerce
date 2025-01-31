@@ -1,0 +1,396 @@
+body{
+  background-color: #18181b;
+}
+
+.gamestore-container {
+    display: flex;
+    background-color: #18181b;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .filters {
+    width: 15%;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+  }
+  
+  .filters h3,
+  .filters h4 {
+    color: #fff;
+  }
+  
+  .filters ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .filters li {
+    margin-bottom: 15px;
+    color: #b0b0b0;
+    cursor: pointer;
+    font-size: 1.2rem;
+
+  }
+  
+  
+  .game-list {
+    width: 85%;
+    flex-grow: 2;
+    margin-left: 20px;
+  }
+  
+  .game-list h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .game-list p {
+    color: #b0b0b0;
+    margin-bottom: 30px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4 {
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+  }
+  
+  .game-card {
+    position: relative;
+    background-color:#27272a;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Added transition */
+  }
+  
+  .game-card:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+    filter: brightness(1.2); /* Brightness effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+  }
+  
+  .game-image {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover; /* Ensure image fills the card */
+    cursor: pointer;
+  }
+  
+  .game-info {
+    padding: 20px;
+  }
+  
+  .game-info h5 {
+    font-size: 18px;
+    color: white;
+    margin: 10px 0;
+  }
+  
+  .game-info p {
+    color: #b5b5b5;
+  }
+  
+  .game-price-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .price {
+    font-weight: 600;
+    color: white;
+    font-size: 18px; /* Increased font size */
+  }
+  
+
+  
+  .game-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .game-buttons .btn {
+    width: 48%;
+  }
+  
+  .btn-dark {
+    background-color: #ff6a00;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .btn-light {
+    background-color: #fff;
+    color: #ff6a00;
+  }
+  
+  .fa-heart {
+    color: red;
+  }
+
+  
+  
+  .icon{
+    display: inline-block;
+    background-color: #27272a;
+    font-size: 1.2rem;
+    padding: 5px 12px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: all .3s ease;
+  }
+  .filters li:hover{
+    color: #fff;
+  }
+
+  .icon:hover{
+    color: black;
+    background-color: white;
+  }
+
+  .filters li:hover .icon{
+    color: black;
+    background-color: white;
+  }
+
+  
+  .add-cart-con{
+    font-size: .92rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all .3s ease;
+    color: #a1a1aa;
+  }
+
+  .add-cart-con span{
+    margin-right: 8px;
+  }
+
+  .add-cart-con .cart-icon{
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 1px;
+    align-self: center;
+  }
+
+  .add-cart-con:hover{
+    color: #661ae6;
+    opacity: 100%;
+  }
+
+  .game-title-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    column-gap: 30px;
+  }
+
+  .game-title-rating h5{
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .game-title-rating .rating{
+    font-size: 13px;
+    border: 2px solid #36d399;
+    border-radius: 40% ;
+    padding: 4px 6px;
+    color: #36d399;
+    font-weight: bold;
+  }
+  .bottom-detail{
+    text-align: end;
+  }
+
+  .bottom-detail p{
+    margin: 0;
+    font-size: 13px;
+    text-align: left;
+   
+  }
+
+ .btn-like{
+  background-color: #000000;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+ }
+
+ .btn-like .like-icon{
+  color: white;
+ }
+
+ .btn-like:hover .like-icon{
+  color:#f05252;
+ }
+ 
+
+@media screen and (max-width : 650px) {
+  .filters{
+    display: none;
+  }
+
+  .Search-con{
+    display: none;
+  }
+}
+
+.platform-con{
+  text-align: left;
+}
+
+.platform-con .platform-icon{
+  margin-right: 10px;
+}
+
+.clear-filter{
+  display: flex;
+}
+
+.clear-filter .filter-btn{
+  background-color: #27272a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-right: 10px;
+  padding: 14px 16px;
+  transition: transform .3s ease;
+}
+
+.clear-filter .filter-btn:hover{
+  transform: scale(1.03);
+}
+
+
+.filters ul li.selected-genre .icon {
+  background-color: white;
+  color: black; /* Change the icon color to black */
+}
+
+.Cart-icon span{
+  background-color: #36d399 ;
+  position: relative;
+  border-radius: 50%;
+  right: 10px;
+  padding: 2px 8px;
+  bottom: 8px;
+  font-weight: bold;
+}
+
+.icon-item{
+  border-radius: 100%;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  margin-top: 7px;
+  padding: 2px;
+}
+
+.icon-item:hover{
+  background-color: rgba(255, 255, 255, 0.342);
+}
+
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 350px;
+  height: 100%;
+  background-color: #1f1f1c;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 24px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  max-width: 100vh;
+  overflow-y: auto;
+}
+
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+.cart-icon-2{
+  display: none;
+}
+
+.cart-icon-3{
+  display: none;
+}
+
+.blur-background {
+  filter: blur(8px); /* Apply blur to the background */
+  pointer-events: none; /* Disable interactions with the blurred background */
+}
+
+/* Disable scrolling when the cart sidebar is open */
+.no-scroll {
+  overflow: hidden;
+}
+
+.game-lists-cart{
+  list-style: none;
+  background-color: rgb(38, 38, 38);
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.game-list-cart-btn button{
+  border: none;
+  padding: 0px 4px;
+  background-color: #3f3f46;
+  border-radius: 50%;
+  margin-left: 5px;
+  color: white;
+  border-radius: 50%;
+}
+
+.game-list-cart-btn button:hover{
+  background-color: #2f2f33;
+}
+
+.checkout-btn{
+  font-size: 1.25rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.arrow-icon{
+  font-size: 1.25rem;
+  margin-bottom: 3px;
+  margin-left: 5px;
+}
+
+.checkout-btn:hover{
+  color: #661ae6;
+}
+
+.btn-like-2{
+  background-color: #000000;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #f05252;
+}
+
